@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="will.littlegame.GameActivity">
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:id="@+id/head_view_bar"
+        layout="@layout/head_view_bar"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="25dp"
+        android:background="#66CCFF"
+        android:id="@+id/b_plus"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:id="@+id/tv_number"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="25dp"
+        android:background="#66CCFF"
+        android:id="@+id/b_minus"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/tv_number"
+        android:layout_alignLeft="@+id/b_plus"
+        android:layout_alignStart="@+id/b_plus"
+        android:layout_marginBottom="150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guess the Number!"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/tv_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK"
+        android:background="#66CCFF"
+        android:id="@+id/b_check"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/b_minus"
+        android:layout_alignStart="@+id/b_minus"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
